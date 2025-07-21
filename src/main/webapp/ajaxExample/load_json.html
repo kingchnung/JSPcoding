@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="shortcut" href="../image/icon2.png">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+	<h1 class="title">예제1</h1>
+	<div class="console" id="result"></div>
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script>
+		/* $.ajax({
+			url:"/firstExample/ajax/json/book.json",
+			method:"get",
+			dataType:"json"
+		}).done(function(json){
+			let book = json.library.book;
+			
+			for(let i = 0; i < book.length; i++) {
+				let title = book[i].title;
+				let author = book[i].author;
+				let pages = book[i].pages;
+				let year = book[i].year;
+				let price = book[i].price;
+				
+				let ul = $("<ul>");
+				let li1 = $("<li>").html(title);
+				let li2 = $("<li>").html(author);
+				let li3 = $("<li>").html(pages);
+				let li4 = $("<li>").html(year);
+				let li5 = $("<li>").html(price);
+				
+				ul.append(li1).append(li2).append(li3)
+				.append(li4).append(li5);
+				
+				$("#result").append(ul);
+				$("#result").append("<hr />");
+			}
+		}).fail(function(xhr, textStatus){
+			$("#result").html(textStatus + "(HTTP-" + xhr.status + ")");
+		}); */
+
+		/* getJSON 함수로 */
+		$.getJSON(
+				'/firstExample/ajax/json/book.json',
+				function(data) {
+					//위와 동일하게 접근하여 출력하여도 됩니다.
+
+					// json 데이터 접근은 this 객체로 가능. 
+					let book = data.library.book;
+					$(book).each(
+							function() {
+								let title = this.title;
+								let author = this.author;
+								let pages = this.pages;
+								let year = this.year;
+								let price = this.price;
+
+								let li = $("<li>").html(
+										title + ", " + author + ", " + pages
+												+ ", " + year + ", " + price);
+								$('#result').append(li);
+							});
+				}).fail(
+				function(xhr, status, errorThrown) {
+					$("#result").html("오류가 발생했습니다.<br />").append(
+							"오류명: " + errorThrown + "<br />").append(
+							"상태: " + status);
+				});
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Insert title here</title>
+		<link rel="shortcut" href="../image/icon2.png">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/common.css">
+	</head>
+	<body>
+		<h1 class="title">$.ajax() 함수를 사용한 JSON 데이터 읽기(2)</h1>
+		<div class="exec">
+			<input type="button" value="JSON데이터 가져오기" id="mybtn" />
+		</div>
+		<div class="console" id="result"></div>
+		
+		<script src="../js/jquery-3.7.1.min.js"></script>
+		<script>
+			$("#mybtn").on("click", function(){
+				$.ajax({
+					url:'/firstExample/ajax/json/05.json',
+					method:'get',
+					dataType:'json'
+				}).done(function(json){
+					$("#result").html("");
+					let subject = json.school.subject;
+					
+					for(let i = 0; i<subject.length; i++) {
+						let title = subject[i].title;
+						let time = subject[i].time;
+						let teacher = subject[i].teacher;
+						
+						let ul = $("<ul>");
+						let li1 = $("<li>").html(title);
+						let li2 = $("<li>").html(time);
+						let li3 = $("<li>").html(teacher);
+						
+						ul.append(li1).append(li2).append(li3);
+						
+						$("#result").append(ul);
+						$("#result").append("<hr />");
+					}
+				}).fail(function(xhr, textStatus){
+					$("#result").html(testStatus + "(HTTP-" + xhr.status + ")");
+				});
+			});	
+		</script>
+	</body>
+</html>

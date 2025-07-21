@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<book>
+		<title>모순</title>
+		<author>양귀자</author>
+		<pages>307쪽</pages>
+		<year>2013년도</year>
+		<price>11,700원</price>
+	</book>
+	<book>
+		<title>소년이 온다</title>
+		<author>한강</author>
+		<pages>216쪽</pages>
+		<year>2014년도</year>
+		<price>13,500원</price>
+	</book>
+	<book>
+		<title>급류</title>
+		<author>백온유</author>
+		<pages>300쪽</pages>
+		<year>2022년도</year>
+		<price>12,600원</price>
+	</book>
+</library>
