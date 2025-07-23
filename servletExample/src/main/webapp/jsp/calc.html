@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>간단한 연산 프로그래밍 - calc.html</title>
+		<link href="../image/icon.png" rel="icon" type="image/x-icon" />
+	</head>
+	<body>
+		<h2>계산기</h2>
+		<hr />
+		<form action="/servletExample/calcServlet" method="post" name="frm">
+			<input type="number" name="num1" required />
+			<select name="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			</select>
+			<input type="number" name="num2" required  />
+			<input type="submit" value="계산하기">
+			<input type="reset" value="다시입력">
+		</form>
+		
+	</body>
+</html>

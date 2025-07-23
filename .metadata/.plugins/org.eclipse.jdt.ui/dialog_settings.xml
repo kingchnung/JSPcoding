@@ -6,4 +6,10 @@
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
+<<<<<<< HEAD
+=======
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="3"/>
+	</section>
+>>>>>>> b846b218dec1722cac123a87d675b85cfeb53600
 </section>
