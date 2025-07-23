@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>select 태그와 post 방식 - lunch.html</title>
+		<link href="../image/icon.png" rel="icon" type="image/x-icon" />
+	</head>
+	<body>
+		<h3>오늘점심은 무엇을 먹을까? (2개이상 선택)</h3>
+		<form action="/servletExample/todayMenu" method="post" name="form">
+			<select name="lunch" size="4" multiple>
+				<option value="떡볶이">떡볶이</option>
+				<option value="버섯덮밥">버섯덮밥</option>
+				<option value="칼국수">칼국수</option>
+				<option value="비빔밥">비빔밥</option>
+				<option value="버섯덮밥">야채김밥</option>
+				<option value="버섯덮밥">햄버거</option>
+			</select>
+			<br />
+			<input type="submit" value="전송">
+		</form>
+	</body>
+</html>
