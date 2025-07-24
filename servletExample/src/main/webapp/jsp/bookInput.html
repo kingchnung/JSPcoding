@@ -3,18 +3,24 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Insert title here</title>
-		<link href="../image/icon.png" rel="icon" type="image/x-icon" />
+		<title>책정보입력예제</title>
+		<link href="/servletExample/image/icon.png" rel="icon" type="image/x-icon" />
+		<style>
+			#btn{
+				width: 230px;
+			}
+		</style>
 	</head>
 	<body>
+	<h4>책 정보 입력</h4>
 		<form  name="bookForm" id="bookForm">
-			<label>책 제목</label><input type="text" id="title" name="title"  /><br />
-			<label>책 저자</label><input type="text" id="author" name="author"  /><br />
-			<label> 출판사 </label><input type="text" id="publisher" name="publisher"  /><br />
+			<label>책제목</label><input type="text" id="title" name="title"  class="inputData"/><span></span><br />
+			<label>책저자</label><input type="text" id="author" name="author"  class="inputData" /><span></span><br />
+			<label>출판사</label><input type="text" id="publisher" name="publisher"  class="inputData" /><span></span><br />
 			<button type="button" id="btn" name="btn">입력</button>
 		</form>
 		
-		<script src="../js/jquery-3.7.1.min.js"></script>
-		<script src="../js/book.js"></script>
+		<script src="/servletExample/js/jquery-3.7.1.min.js"></script>
+		<script src="/servletExample/js/book.js"></script>
 	</body>
 </html>

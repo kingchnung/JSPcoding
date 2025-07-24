@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.example.BookDTO;
+
 /**
  * Servlet implementation class BookInputServlet
  */
@@ -24,9 +26,17 @@ public class BookInputServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		request.setCharacterEncoding("utf-8");
 		
-		request.setAttribute("title", request.getParameter("title"));
-		request.setAttribute("author", request.getParameter("author"));
-		request.setAttribute("publisher", request.getParameter("publisher"));
+//		request.setAttribute("title", request.getParameter("title"));
+//		request.setAttribute("author", request.getParameter("author"));
+//		request.setAttribute("publisher", request.getParameter("publisher"));
+		
+		String title = request.getParameter("title");
+		String author = request.getParameter("author");
+		String publisher = request.getParameter("publisher");
+		
+		BookDTO book = new BookDTO(title, author, publisher);
+		
+		request.setAttribute("book", book);
 		
 		RequestDispatcher dispatch = request.getRequestDispatcher("bookOutput");
 		dispatch.forward(request, response);
