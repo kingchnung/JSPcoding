@@ -1,7 +1,6 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=72d57cde7ce2a357211d96ade7c1c4d605a97225
 eclipse.preferences.version=1
 newFileTemplateName=New HTML File (5)
-<<<<<<< HEAD
-org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="html_new" deleted\="false" description\="html 5" enabled\="true" id\="org.eclipse.wst.html.ui.templates.html5" name\="New HTML File (5)">&lt;\!DOCTYPE html&gt;\r\n&lt;html lang\="ko"&gt;\r\n\t&lt;head&gt;\r\n\t\t&lt;meta charset\="${encoding}"&gt;\r\n\t\t&lt;meta name\="viewport" content\="width\=device-width, initial-scale\=1.0"&gt;\r\n\t\t&lt;title&gt;Insert title here&lt;/title&gt;\r\n\t\t&lt;link href\="/servletExample/image/icon.png" rel\="icon" type\="image/x-icon" /&gt;\r\n\t&lt;/head&gt;\r\n\t&lt;body&gt;\r\n\t\t${cursor}\r\n\t&lt;/body&gt;\r\n&lt;/html&gt;</template></templates>
-=======
 org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="html_new" deleted\="false" description\="html 5" enabled\="true" id\="org.eclipse.wst.html.ui.templates.html5" name\="New HTML File (5)">&lt;\!DOCTYPE html&gt;\r\n&lt;html lang\="ko"&gt;\r\n\t&lt;head&gt;\r\n\t\t&lt;meta charset\="${encoding}"&gt;\r\n\t\t&lt;meta name\="viewport" content\="width\=device-width, initial-scale\=1.0"&gt;\r\n\t\t&lt;title&gt;Insert title here&lt;/title&gt;\r\n\t\t&lt;link href\="../image/icon.png" rel\="icon" type\="image/x-icon" /&gt;\r\n\t&lt;/head&gt;\r\n\t&lt;body&gt;\r\n\t\t${cursor}\r\n\t&lt;/body&gt;\r\n&lt;/html&gt;</template></templates>
->>>>>>> 72d57cde7ce2a357211d96ade7c1c4d605a97225
