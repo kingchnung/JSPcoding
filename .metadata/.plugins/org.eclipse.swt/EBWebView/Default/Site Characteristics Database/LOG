@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2025/07/24-09:36:25.218 118c Reusing MANIFEST C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
 2025/07/24-09:36:25.218 118c Recovering log #6
 2025/07/24-09:36:25.219 118c Reusing old log C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000006.log 
+=======
+2025/07/23-20:42:36.277 a7c Reusing MANIFEST C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+2025/07/23-20:42:36.280 a7c Recovering log #3
+2025/07/23-20:42:36.280 a7c Reusing old log C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000003.log 
+>>>>>>> 72d57cde7ce2a357211d96ade7c1c4d605a97225

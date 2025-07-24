@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2025/07/24-09:31:02.461 3ae8 Reusing MANIFEST C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
 2025/07/24-09:31:02.467 3ae8 Recovering log #3
 2025/07/24-09:31:02.468 3ae8 Reusing old log C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+=======
+2025/07/23-20:37:07.229 2b6c Reusing MANIFEST C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/07/23-20:37:07.234 2b6c Recovering log #3
+2025/07/23-20:37:07.236 2b6c Reusing old log C:\backenddeveloper\JSPCoding\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+>>>>>>> 72d57cde7ce2a357211d96ade7c1c4d605a97225

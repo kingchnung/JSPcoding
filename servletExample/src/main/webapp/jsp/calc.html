@@ -9,18 +9,20 @@
 	<body>
 		<h2>계산기</h2>
 		<hr />
-		<form action="/servletExample/calcServlet" method="post" name="frm">
-			<input type="number" name="num1" required />
-			<select name="operator">
-			<option value="+">+</option>
+		<form  name="frm" id="frm">
+			<input type="text" name="num1" id="num1" class="number"/>
+			<select name="operator" id="operator">
+			<option value="+" selected>+</option>
 			<option value="-">-</option>
 			<option value="*">*</option>
 			<option value="/">/</option>
 			</select>
-			<input type="number" name="num2" required  />
-			<input type="submit" value="계산하기">
-			<input type="reset" value="다시입력">
+			<input type="text" name="num2" id="num2" class="number" />
+			<button type="button" id="btnCalc">계산하기</button>
+			<button type="reset" >다시입력</button>
 		</form>
 		
+		<script src="../js/jquery-3.7.1.min.js"></script>
+		<script src="../js/calc.js"></script>
 	</body>
 </html>
